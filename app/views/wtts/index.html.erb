@@ -1,0 +1,19 @@
+<%= link_to 'New wtt', new_wtt_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @wtts.each do |wtt| %>
+    <tr>
+      <td><%= wtt.title %></td>
+      <td><%= wtt.text %></td>
+      <td><%= link_to 'Show', wtt_path(wtt) %></td>
+      <td><%= link_to 'Edit', edit_wtt_path(wtt) %></td>
+    </tr>
+  <% end %>
+</table>
+
