@@ -1,4 +1,4 @@
-<%= link_to 'New wtt', new_wtt_path %>
+﻿<%= link_to 'New wtt', new_wtt_path %>
 
 <table>
   <tr>
@@ -6,8 +6,10 @@
     <th>Text</th>
     <th colspan="2"></th>
   </tr>
- 
+     
+    
   <% @wtts.each do |wtt| %>
+输出：<%= "test" %> <%= ENV['userid'] %> 
     <tr>
       <td><%= wtt.title %></td>
       <td><%= wtt.text %></td>
